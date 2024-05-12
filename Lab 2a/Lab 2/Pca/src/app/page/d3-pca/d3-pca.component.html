@@ -1,0 +1,53 @@
+
+
+        <!-- <app-d3-bar *ngIf="this.evalue"  [inputFromParent]="evalue"></app-d3-bar> -->
+      
+
+        <!-- <app-d3-scattermatrix *ngIf="this.evalue"  [response]="evalue" ></app-d3-scattermatrix> -->
+
+
+        <!-- <app-d3-scatterplot *ngIf="this.evalue"  [response]="evalue"  ></app-d3-scatterplot> -->
+
+
+
+
+        <body>
+
+                <div class="grid-container">
+              
+                  <div class="grid-item">
+
+                        <app-d3-bar  (changepcavalue)="changepca($event)"  (changeindexvalue)="changeindex($event)" *ngIf="this.evalue"  [inputFromParent]="evalue"></app-d3-bar>
+
+
+
+                  </div>
+                  <div class="grid-item">
+
+                        <app-d3-scattermatrix [index]="index" *ngIf="this.evalue"  [response]="evalue" ></app-d3-scattermatrix>
+
+                  </div>
+                  <div class="grid-item">
+
+                        <app-d3-scatterplot [pca]="pca" *ngIf="this.evalue" [k]="k"  [response]="evalue"  ></app-d3-scatterplot>
+
+
+                  </div>
+   
+                  <div class="grid-item">
+
+
+
+                        <app-d3-kmse *ngIf="this.evalue" (changekvalue)="changek($event)" [inputFromParent]="evalue"></app-d3-kmse>
+
+                        
+                        
+                       
+                
+                </div>
+                 
+         
+              
+                </div>
+                
+                </body>

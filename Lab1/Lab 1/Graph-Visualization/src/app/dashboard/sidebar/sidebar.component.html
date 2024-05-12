@@ -1,0 +1,33 @@
+
+<ul class="c-sidebar-nav">
+    <li class="c-sidebar-nav-title">Plot A Graph</li>
+
+
+    <li class="c-sidebar-nav-dropdown">
+        <a class="c-sidebar-nav-dropdown-toggle" matRipple appToggle>
+            <i class="c-sidebar-nav-icon cil-library"></i>Attribute
+        </a>
+        <ul class="c-sidebar-nav-dropdown-items"  >
+            
+                <li *ngFor="let n of header; index as i; first as isFirst" class="c-sidebar-nav-item">
+                  <a  style="cursor: pointer;" class="c-sidebar-nav-link" matRipple  routerLinkActive="c-active">
+                    <span (click)="change(n.name,n.value)">{{ n.name }} </span>
+                    <label class="radio-label">
+                      <input type="radio" name="menuOption{{i}}" [checked]="checkradio('x',i)" (click)="addradio('x',i)" class="radio-input" />
+                      <span class="radio-text">X</span>
+                    </label>
+                    <label class="radio-label">
+                      <input type="radio" name="menuOption{{i}}" [checked]="checkradio('y',i)" (click)="addradio('y',i)" class="radio-input" />
+                      <span class="radio-text">Y</span>
+                    </label>
+                  </a>
+                </li>
+             
+          
+        </ul>
+
+    </li>
+   
+    <ng-content></ng-content>
+</ul>
+

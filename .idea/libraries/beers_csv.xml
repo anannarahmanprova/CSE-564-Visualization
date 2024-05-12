@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="beers.csv">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Vis_Capstone/myenv/lib/python3.12/site-packages/prince/datasets/beers.csv.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

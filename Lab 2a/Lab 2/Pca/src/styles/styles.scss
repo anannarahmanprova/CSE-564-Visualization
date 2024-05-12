@@ -1,0 +1,61 @@
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+// material theme is import in angular.json
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// $roboto-font-path: "~roboto-fontface/fonts" !default;
+// @import "~roboto-fontface/css/roboto/sass/roboto-fontface";
+$material-icons-font-path: '~material-icons/iconfont/';
+@import '~material-icons/iconfont/material-icons.scss';
+
+@import 'core-ui-fixes';
+@import 'material-fixes';
+
+
+
+.radio-label {
+    display: inline-block;
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+  
+  .radio-input {
+    vertical-align: middle;
+
+  }
+  
+  .radio-text {
+    vertical-align: middle;
+    margin-left: 5px; /* Adjust the margin as needed */
+
+  }
+  .c-sidebar-dark{
+    background-color: navy;
+
+  }
+  .c-sidebar-light{
+     width:320px
+
+  }
+ .c-sidebar-nav-dropdown-items{
+  height: 490px;
+  overflow-y: scroll;
+
+ }
+ 
+
+
+.c-sidebar-nav-dropdown-toggle:hover {
+
+  color: black !important;
+  
+  background: rgb(230, 222, 237)!important;
+}
+.c-sidebar-nav-item :hover{
+  
+  background: rgb(230, 222, 237)!important;
+
+}
+label {
+
+  display: inline-block;
+  margin-bottom: 0 !important;
+}

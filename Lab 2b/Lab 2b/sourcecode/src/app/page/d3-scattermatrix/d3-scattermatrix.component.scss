@@ -1,0 +1,31 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 6px; /* Increase padding for better spacing */
+  text-align: center;
+  border-bottom: 1px solid #ffd0d7; /* Increase border thickness */
+}
+
+th {
+  background-color: #e8bbbb; /* Lighter background color for headers */
+  font-weight: bold; /* Make headers bold */
+  color: #333; /* Darker text color for headers */
+}
+
+td {
+  background-color: #f1e7e7;
+  color: #666; /* Darker text color for cells */
+}
+
+/* Optional: Hover effect for rows */
+tr:hover {
+  background-color: #f9f9f9;
+}

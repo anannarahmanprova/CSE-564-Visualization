@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding-top: 10px; /* Added top padding */
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+  grid-template-rows: repeat(3, auto); /* Three rows, size adjusted to content */
+  gap: 10px; /* Adds a gap between grid items */
+  height: 100vh; /* Full viewport height */
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* No need to specify the first and third items as they will naturally fill the first two columns */
+/* Center the single item on the second row */
+.grid-item:nth-child(3) {
+  grid-column: 1 / span 2; /* Span across both columns */
+  width: 80%; /* Adjust the width as needed */
+  justify-self: center; /* Center the item within the grid column */
+}
